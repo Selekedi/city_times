@@ -1,0 +1,20 @@
+{
+  "name": "flosh",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Selekedi/pontsho-epoxy/issues"
+  },
+  "homepage": "https://selekedi.github.io/pontsho-epoxy",
+  "description": "Corner busted",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

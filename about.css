@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px 0;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+  backdrop-filter: blur(12px); /* key property */
+  -webkit-backdrop-filter: blur(12px); /* Safari */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  z-index:99;
+
+}
+header a {
+  text-decoration: none;
+}
+
+header .logo a {
+  font-size: 24px;
+  text-decoration: none;
+}
+
+header .logo a img {
+  width: 125px;
+}
+
+header nav {
+  transition: height 0.3s ease-in-out;
+}
+
+header nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  font-size: 20px;
+
+}
+
+header nav ul li a {
+  padding: 4px 8px;
+  text-shadow: 0px 0px 8px #fff;
+  color: #000;
+}
+
+header > button {
+  background: rgb(255 255 255 / 16%);
+  border: 0;
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.6;
+  scale: 0.7;
+  border-radius: 8px;
+  transition: 0.25s;
+  display: none;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transform: scaleY(0.8) scaleX(1.2);
+}
+
+.burger-6.is-closed.hamRotate {
+  transform: rotate(45deg) scale(1.2);
+}
+
+.ham .line {
+  fill: none;
+  transition: 0.4s;
+  stroke: #000;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.burger-6.is-closed.ham1 .top {
+  stroke-dashoffset: -98px;
+}
+.burger-6.is-closed.ham1 .bottom {
+  stroke-dashoffset: -138px;
+}
+
+@media (max-width:500px) {
+  header {
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+  header .logo {
+    padding-left: 16px;
+  }
+}
+
+@media (max-width:810px){
+  header nav {
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  header nav ul {
+    display: flex;
+    padding: 24px 0;
+    flex-direction: column;
+  }
+
+  header > button {
+    display: block;
+  }
+}
+
+main {
+    padding-top: 256px;
+    margin: 48px;
+}
+
+@media (max-width:810px) {
+    main {
+        
+    }
+}
+
+section {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 32px;
+}
+
+.img-container {
+    width: 400px;
+    aspect-ratio: 16/9;
+    background-color: #000;
+    border-radius: 8px;
+    margin: 8px;
+    box-shadow: 0 0 2px #555;
+}
+
+.team {
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 16px;
+}
+
+
+
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius:8px;
+    width: fit-content;
+    box-shadow: 0 0 1px #555;
+    padding: 8px;
+}

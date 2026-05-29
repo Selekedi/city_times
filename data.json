@@ -1,0 +1,17 @@
+{
+    "name_of_business":"Jane Furse City Times",
+    "logo":"./images/logo-colored.png",
+    "contacts":{
+        "cell":"+27791156763",
+        "whatsapp":"+27791156763",
+        "facebook":"",
+        "tiktok":"",
+        "email":"janefursecitytimes@gmail.com"
+    },
+    "address":{
+        "stand_no":"30038",
+        "section":"Vergelegen C",
+        "town":"Jane Furse",
+        "postal_code":"1085"
+    }
+}
